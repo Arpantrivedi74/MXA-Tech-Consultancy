@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MXA Tech Solutions</title>
+ <style>
+   
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    } 
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+       font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+    }  
+    
+    .navbar {
+      background-color: #111;
+      padding: 15px 20px;
+      display: flex;
+      gap: 40px;
+       justify-content: flex-end;
+    }
+
+    .navbar > div {
+      position: relative;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 10px;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #222;
+      min-width: 260px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      z-index: 1;
+      flex-direction: column;
+      border-bottom: 1px solid #2c2c2c;
+
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      color: #ccc;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .navbar div:hover .dropdown-content {
+      display:block;
+    
+    }
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+    .faq-section {
+  padding: 50px 20px;
+  background-color:white;
+
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #007BFF;
+}
+
+.faq-section h3 {
+  font-size: 24px;
+  margin: 30px 0 10px;
+  color: #007bff;
+}
+
+.faq {
+  max-width: 900px;
+  margin: 10px auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+.question {
+  padding: 18px 24px;
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.question:hover {
+  background: #0056b3;
+}
+
+.answer { padding: 20px 24px;
+  display: none;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.5;
+  border-top: 1px solid #ddd;
+}
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a;
+      padding: 10px 40px;
+      color: white;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .menu {
+      display: flex;
+      gap: 30px;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      position: relative;
+    }
+    
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #00bcd4;
+}
+
+.footer-box.about p {
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+}
+
+.footer-nav a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  background: #333;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  background-color: #00bcd4;
+  color: #111;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px 10px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+   
+     footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: white;
+      font-size: 14px;
+    }
+</style>
+</head>
+<body>
+     <div class="navbar">
+   <div class="logo">MXA Tech Solutions</div>
+    
+    <!-- IT Development -->
+    <div class="menu">
+      <div>
+      <a href="./MXA Tech Consultancy.html">HOME </a>
+    </div>
+
+    <!-- Recruitment Consulting -->
+   <div class="dropdown">
+  <a href="./Services.html">SERVICES ▾</a>
+  <div class="dropdown-content">
+    <a href="./recruitement.html">Recruitment</a>
+    <a href="./staffing.html">Staffing</a>
+    <a href="./hr consulting.html">HR Consulting</a>
+  </div>
+</div>
+
+    <!-- Company -->
+    <div>
+      <a href="./careers.html">CAREERS </a>
+    </div>
+<div>
+      <a href="./Contact Us.html">ENQUIRE US </a>
+      
+    </div>
+    <!-- Enquire Us -->
+    <a href="./faq.html">FAQ</a>
+
+  </div>
+  </div>
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <h3>For Businesses</h3>
+
+  <div class="faq">
+    <div class="question">Q1: What kind of companies do you work with?</div>
+    <div class="answer">We work with startups, mid-sized businesses, and enterprises across various sectors, especially those looking to scale their tech teams or need strategic recruitment support.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q2: Do you offer customized hiring solutions?</div>
+    <div class="answer">Yes, all our hiring plans are tailored based on your industry, team size, hiring urgency, and budget. We offer everything from bulk hiring to niche technical recruitment.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q3: How do you ensure the quality of candidates?</div>
+    <div class="answer">Every candidate goes through a multi-step screening process, including resume evaluation, technical assessments (if required), and pre-interview conversations to ensure the best fit.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q4: Can I hire remote or offshore talent through MXA?</div>
+    <div class="answer">Absolutely. We specialize in remote and offshore hiring, giving you access to a wider talent pool.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q5: How quickly can you help us fill positions?</div>
+    <div class="answer">Depending on the role, we typically start sharing quality profiles within 48–72 hours.</div>
+  </div>
+
+  <h3>For Job Seekers</h3>
+
+  <div class="faq">
+    <div class="question">Q6: How can I apply for jobs through MXA Tech Consultancy?</div>
+    <div class="answer">You can submit your resume via our Careers Page or email it to [your email]. We’ll reach out when there’s a role that matches your profile.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q7: Do you charge candidates any fees?</div>
+    <div class="answer">No, we never charge job seekers for any of our services.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q8: Can I get help with resume building and interview preparation?</div>
+    <div class="answer">Yes, we offer resume polishing, career consultation, and interview preparation guidance — all free of charge.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q9: I’m a fresher. Can MXA help me get a job?</div>
+    <div class="answer">Definitely. We support both freshers and experienced candidates by matching them with companies looking for enthusiastic, trainable talent.</div>
+  </div>
+
+  <div class="faq">
+    <div class="question">Q10: Will I be updated after I apply for a job?</div>
+    <div class="answer">Yes, we ensure timely communication. You’ll be informed about the status of your application at every step.</div>
+  </div>
+</section>
+<script>
+  const questions = document.querySelectorAll('.question');
+
+  questions.forEach((q) => {
+    q.addEventListener('click', () => {
+      const answer = q.nextElementSibling;
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+  </body>
+<footer class="footer">
+  <div class="footer-content">
+    <!-- Mini About -->
+    <div class="footer-box about">
+      <h3>MXA Tech Solutions</h3>
+      <p>We help businesses grow through smart talent acquisition and digital development.</p>
+    </div>
+
+   
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MXA Tech Solutions. All rights reserved.</p>
+  </div>
+</footer>
+
+
+</html>
+
+</body>
